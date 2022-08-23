@@ -1,0 +1,228 @@
+
+nav{
+    width:100%;
+    display: flex;
+    place-items: center;
+    background:#2C3E40;
+    justify-content: center;
+    margin-bottom:100px;
+}
+
+.logo{
+    width: 80px;
+    margin-right:10px;
+    padding:10px;
+}
+
+.titulo-principal a{
+    text-decoration:none;
+}
+
+
+.titulo-principal h1{
+    font-size:35px;
+    font-family: 'Roboto Mono', monospace;
+    color:#fff;
+}
+
+.titulo-principal h1:hover{
+    transition:200ms;
+    color: #F1A438;
+    
+}
+
+main{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom:150px;
+}
+
+.titulo-secundario{
+    margin-top:30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size:30px;  
+    text-align:center;
+}
+
+.randomCats{
+    margin-left:30px;
+}
+
+.randomCats img{
+    width:300px;
+    height:300px;
+    border-radius:8px;
+    object-fit: cover;
+}
+
+.info{
+    margin-top:40px;
+    display:flex;
+    justify-content: center;
+    gap:50px;
+    padding:30px;
+}
+
+.img1,
+.img2{
+    display:grid;    
+}
+
+.addButton{
+    width:100%;
+    border-radius:8px;
+    border:1px solid;
+    height:50px;
+    background:#fff;
+    font-size:16px;
+    font-weight:bold;
+    color:#809FB0;
+    border-color:#809FB0;
+    cursor:pointer;
+    margin-top:25px;
+}
+
+.addButton:hover{
+    border-color:#F1A438;
+    color:#F1A438;
+    transition:  0.30s;
+}
+
+.refresh{
+    display:flex;
+    justify-content:center;
+}
+
+.uploadingCat{
+    border-style: dashed;
+    border-color:#F1A438;
+    border-radius:15px;
+    margin-right:30px;
+}
+
+.uploadingForm{
+    margin-top:70px;
+    gap:20px;
+    display:grid;
+    justify-content:center;
+}
+
+.uploadCat{
+    width:100%;
+    border-radius:8px;
+    border:2px solid;
+    height:50px;
+    background:#fff;
+    font-size:16px;
+    font-weight:bold;
+    color:#F1A438;
+    border-style: dashed;
+    border-color:#F1A438;
+    cursor:pointer;
+    margin-top:25px;
+}
+
+.preview-img{
+    display: grid;
+    justify-content:center;
+}
+
+.preview{
+    border-radius:8px;
+}
+
+.refreshButton{
+    border-radius:8px;
+    border:1px solid;
+    height:50px;
+    width:150px;
+    background:#fff;
+    font-size:16px;
+    font-weight:bold;
+    color:#809FB0;
+    border-color:#809FB0;
+    cursor:pointer;
+}
+
+.refreshButton:hover{
+    border-color:#F1A438;
+    color:#F1A438;
+    transition:  0.30s;
+}
+
+.favoriteCats{
+    display:flex;
+    width:1100px;
+    flex-wrap: wrap;
+    gap:24px; 
+    margin:100px auto;
+}
+
+.favTitle{
+    text-align: center;
+    margin-top:80px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size:30px;
+}
+
+.card{
+    display: grid;
+}
+
+.catFavImg{
+    margin-bottom:20px;
+    width:200px;
+    height:200px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+.card button{
+    background:#fff;
+    color:#dd1e1e;
+    position:absolute;
+    width:30px;
+    height:30px;
+    cursor: pointer;
+    margin:5px;
+    border-radius:3px;
+    border-style: none;
+}
+
+.card button:hover{
+    background:#2C3E40;
+    color:#fff;
+    transition:0.30s;
+}
+
+.fa-spinner-third:before {
+    content: "\f3f4";
+}
+
+footer{
+    background: #2C3E40;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    height:60px;
+}
+
+.copyright{
+    color: #fff;
+    margin:8px;
+    margin-left:60px;
+}
+
+
+
+.social{
+    margin:20px;
+    margin-right:60px;
+    font-size: 20px;
+}
+
+.social a{
+    text-decoration:none;
+    color: #fff;
+    padding-left:10px;
+}

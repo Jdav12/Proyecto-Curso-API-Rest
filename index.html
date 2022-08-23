@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/129805e69c.js" crossorigin="anonymous"></script>
+    <title>CatMore</title>
+</head>
+<body>
+    
+    <nav>
+        <img class="logo" src="/logo1.png" alt="">
+        <div class="titulo-principal"><a href="/"><h1>CatMore</h1></a></div>
+    </nav>  
+
+    <span id="error"></span>
+
+    <main>
+        <section id="randomCats" class="randomCats">
+
+        <h2 class="titulo-secundario">Gatos Aleatorios</h2>
+
+        <div class="info">
+            <article class="img1">
+                <img id="img1" width="400px" alt="foto gato aleatorio">
+                <button class="addButton" id="btn1">Añadir a favoritos</button>
+            </article>
+    
+            <article class="img2">
+                <img id="img2" width="400px" alt="foto gato aleatorio">
+                <button class="addButton" id="btn2">Añadir a favoritos</button>
+            </article> 
+        </div>
+ 
+        <div class="refresh">
+            <button class="refreshButton" onclick="loadRandomCat()">Actualizar <i class="fa-solid fa-arrows-rotate"></i></button>
+        </div>
+
+        </section>
+
+    <section class="uploadingCat" id="uploadingCat">
+        <h2 class="titulo-secundario uploadTitle">Sube una foto de tu gato</h2>
+        <form id="uploadingForm" class="uploadingForm">
+            <label><input class="file" type="file" id="file" name="file" onchange="preview_img(event)"/></label>
+            <div class="preview-img"><img width="150px" src="" class="preview" id="preview" alt=""></div>
+            <button class="uploadCat" type="button" onclick="uploadCatFoto()">Subir <i class="fa-solid fa-arrow-up-from-bracket"></i>
+        </form>
+       
+    </section>
+    </main>
+
+    <h2 class="favTitle">Favoritos</h2>
+    <section  class="favoriteCats" id="favoriteCats"></section>
+
+    <footer>
+        <div class="copyright">
+            <p>©2022 CatMore - Jesús Escalante. Todos los derechos reservados.</p>
+        </div>
+        <div class="social">
+            <a target="_blank" href="https://www.instagram.com/jesus_esca12/"><i class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/jesusescalante12"><i class="fa-brands fa-linkedin"></i></a>
+            <a target="_blank" href="https://github.com/Jdav12"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
