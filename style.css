@@ -226,3 +226,36 @@ footer{
     color: #fff;
     padding-left:10px;
 }
+
+@media (max-width:1100px){
+  
+    main{
+     display:block;
+     width:800px;
+     margin: auto;
+    }
+ 
+    .randomCats{
+     margin-left:0px;
+    }
+ 
+    .uploadingCat{
+     margin:30px;
+    }
+ 
+    .favoriteCats{
+     width:700px;
+     gap:50px;
+     margin:100px auto;
+    }
+ 
+    .catFavImg{
+     margin-bottom: 0px;
+    }
+ }
+ 
+ @media (max-width:800px){
+     body{
+         width:fit-content;
+     }
+ }
